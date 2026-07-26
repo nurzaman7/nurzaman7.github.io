@@ -10,7 +10,7 @@
   --border-soft: #dddddd;
   --invert-bg: #1f1f1f;
   --invert-text: #ffffff;
-  --max-width: 1420px;
+  --max-width: 1320px;
 }
 
 * {
@@ -787,7 +787,7 @@ footer a {
 }
 
 .archive-container {
-  max-width: 1500px;
+  max-width: var(--max-width);
 }
 
 .archive-intro {
