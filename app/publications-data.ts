@@ -374,6 +374,10 @@ export const theses: PublicationRecord[] = [
 
 export const patents: PublicationRecord[] = [
   {
+    "year": "2026",
+    "citation": "N. Shakoor and N. Ahmed, \"Wi-Fi Sensing-Based Continuous Crop Phenotyping,\" U.S. provisional patent application No. 64/121,246, filed Jul. 29, 2026."
+  },
+  {
     "year": "2024",
     "citation": "G. Saha, R. K. Das, N. Ahmed, and A. K. Maji, \"An improved SDN based IoT system,\" Indian patent granted on Dec. 16, 2024, Patent Ref.: 202131017791."
   },
