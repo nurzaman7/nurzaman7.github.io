@@ -171,10 +171,7 @@ export default function PapersPage() {
 
         <section className="panel archive-verification">
           <h2>Research profiles</h2>
-          <p>
-            # External indexes are retained only as verification sources. The
-            archive itself lives on this website.
-          </p>
+          <p># Independent profiles for citation metrics and verification.</p>
           <div className="command-links">
             <a
               href="https://scholar.google.com/citations?user=wUFC3VMAAAAJ&hl=en"

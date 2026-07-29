@@ -2,6 +2,8 @@
 
 import { FormEvent, useMemo, useRef, useState } from "react";
 
+import { patents } from "./publications-data";
+
 type AgentMessage = {
   role: "agent" | "visitor";
   text: string;
@@ -345,7 +347,7 @@ export default function Home() {
             <span>:: Connected systems research</span>
           </div>
           <div className="stat-card">
-            <strong>3</strong>
+            <strong>{patents.length}</strong>
             <span>:: Patents granted or filed</span>
           </div>
           <div className="stat-card">
