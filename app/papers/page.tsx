@@ -75,15 +75,29 @@ function ArchiveList({ records }: { records: PublicationRecord[] }) {
             <small>{String(index + 1).padStart(2, "0")}</small>
             {record.citation}
           </p>
-          {record.href ? (
-            <a
-              href={record.href}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`Open publication ${index + 1}`}
-            >
-              ↗
-            </a>
+          {record.href || record.pdfHref ? (
+            <div className="archive-actions">
+              {record.pdfHref ? (
+                <a
+                  href={record.pdfHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`View PDF for publication ${index + 1}`}
+                >
+                  [pdf]
+                </a>
+              ) : null}
+              {record.href ? (
+                <a
+                  href={record.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Open publication ${index + 1}`}
+                >
+                  ↗
+                </a>
+              ) : null}
+            </div>
           ) : (
             <i aria-hidden="true">—</i>
           )}

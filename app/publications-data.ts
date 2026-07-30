@@ -2,6 +2,7 @@ export type PublicationRecord = {
   year: string;
   citation: string;
   href?: string;
+  pdfHref?: string;
 };
 
 export const journalArticles: PublicationRecord[] = [
@@ -368,7 +369,8 @@ export const theses: PublicationRecord[] = [
   {
     "year": "2020",
     "citation": "N. Ahmed, \"Designing IEEE 802.11ah-based scalable network for Internet of Things,\" Ph.D. Thesis, Department of Information Technology, North-Eastern Hill University, 2020.",
-    "href": "http://hdl.handle.net/10603/348225"
+    "href": "http://hdl.handle.net/10603/348225",
+    "pdfHref": "/thesis/designing-ieee-80211ah-thesis-web.pdf"
   }
 ];
 
