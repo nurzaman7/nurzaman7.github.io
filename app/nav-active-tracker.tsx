@@ -45,6 +45,20 @@ export function NavActiveTracker() {
           current = section.id;
         }
       }
+
+      // The last section can't always reach its own scroll-margin-top: if
+      // the trailing content (footer) below it is shorter than the topbar
+      // offset, the page hits its maximum scroll position first and the
+      // section's rect.top never crosses the threshold above. Once the
+      // page is scrolled as far as it can go, there's no content left to
+      // prove otherwise, so force the last section active.
+      const atBottom =
+        window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight - 2;
+      if (atBottom) {
+        current = sections[sections.length - 1].id;
+      }
+
       setActive(current);
     }
 
