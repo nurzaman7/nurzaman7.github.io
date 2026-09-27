@@ -6,7 +6,7 @@ import { useEffect } from "react";
 // ever updated it, so Systems/Research/Contact never got highlighted after
 // being clicked or scrolled to. Track scroll position and toggle the class
 // on whichever section's top has passed just below the sticky topbar.
-const SECTION_IDS = ["overview", "systems", "research", "contact"];
+const SECTION_IDS = ["overview", "systems", "embedded", "research", "contact"];
 
 export function NavActiveTracker() {
   useEffect(() => {

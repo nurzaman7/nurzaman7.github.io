@@ -14,6 +14,15 @@ const AGENT_CHAT_ENABLED = false;
 
 const projects = [
   {
+    id: "sys-00",
+    title: "PheNode · Agrela Ecosystems",
+    category: "embedded / cellular IoT",
+    status: "commercial",
+    description:
+      "Solar-powered field sensing platform: Zephyr RTOS firmware on nRF52840, LTE-M/NB-IoT cellular and LoRa sensor links, end-to-end over-the-air updates, and a fleet cloud with device telemetry.",
+    href: "https://phenode.com",
+  },
+  {
     id: "sys-01",
     title: "OpenWrt ath9k 2C MAC",
     category: "Wi-Fi MAC / driver",
@@ -92,6 +101,29 @@ const focusAreas = [
   },
 ];
 
+const embeddedAreas = [
+  {
+    code: "embedded.rtos",
+    title: "Zephyr RTOS firmware",
+    text: "About 15,000 lines of Zephyr C on nRF52840 (Arm Cortex-M4F): sensor sampling and scheduling, store-and-forward buffering, camera capture, and drivers for I2C, SPI, UART, RS-485, and SDI-12.",
+  },
+  {
+    code: "embedded.cellular",
+    title: "Cellular & LoRa connectivity",
+    text: "LTE-M/NB-IoT through Blues Notecard with per-device link telemetry (RSSI, SINR, access technology), LoRa sensor links on SX1262, and BLE, with data buffered through network outages.",
+  },
+  {
+    code: "embedded.ota",
+    title: "Secure over-the-air updates",
+    text: "An end-to-end OTA pipeline: cloud to gateway over cellular, then on to wireless sensors over AES-CMAC-authenticated LoRa, with SHA-256 verification and MCUboot rollback.",
+  },
+  {
+    code: "embedded.fleet",
+    title: "Bring-up, power & fleet",
+    text: "Board bring-up checklists, Otii power profiling, oscilloscope bus debugging, and a fleet cloud with remote configuration, watchdog recovery, and device health dashboards.",
+  },
+];
+
 const publications = [
   {
     year: "2026",
@@ -167,7 +199,12 @@ const publications = [
 
 const positions = [
   {
-    period: "2022—now",
+    period: "2024–now",
+    role: "Lead Systems Engineer",
+    place: "Agrela Ecosystems · Saint Louis · PheNode",
+  },
+  {
+    period: "2022–now",
     role: "Engineering Research Scientist",
     place: "Donald Danforth Plant Science Center · Saint Louis",
   },
@@ -182,7 +219,7 @@ const positions = [
     place: "Indian Institute of Science · ECE",
   },
   {
-    period: "2019—21",
+    period: "2019–21",
     role: "Research Associate",
     place: "Indian Institute of Technology Kharagpur · CSE",
   },
@@ -320,6 +357,7 @@ export default function Home() {
               Overview
             </a>
             <a href="#systems">Systems</a>
+            <a href="#embedded">Embedded</a>
             <a href="#research">Research</a>
             <a href="/papers/">Papers</a>
             <a href="#contact">Contact</a>
@@ -331,9 +369,9 @@ export default function Home() {
         <section className="terminal-intro" id="overview">
           <h1>Nurzaman Ahmed</h1>
           <p>
-            # Engineering research scientist spanning Wi-Fi MAC, embedded
-            wireless systems, interoperable AI, IoT, edge-cloud, and digital
-            agriculture.
+            # Engineering research scientist and embedded systems lead
+            spanning Wi-Fi MAC, Zephyr RTOS firmware, cellular IoT,
+            interoperable AI, edge-cloud, and digital agriculture.
           </p>
         </section>
 
@@ -372,6 +410,15 @@ export default function Home() {
                 systems. The constant is practical: research should survive
                 real constraints and become something people can use.
               </p>
+              <p>
+                At Agrela Ecosystems, I lead systems engineering for{" "}
+                <a href="https://phenode.com" target="_blank" rel="noreferrer">
+                  PheNode
+                </a>
+                , a solar-powered field sensing platform: Zephyr RTOS firmware
+                on nRF52840, LTE-M/NB-IoT cellular and LoRa connectivity,
+                secure over-the-air updates, and the fleet cloud behind it.
+              </p>
               <dl className="profile-meta">
                 <div>
                   <dt>role</dt>
@@ -382,10 +429,14 @@ export default function Home() {
                   <dd>Donald Danforth Plant Science Center</dd>
                 </div>
                 <div>
+                  <dt>also</dt>
+                  <dd>Lead Systems Engineer · Agrela Ecosystems</dd>
+                </div>
+                <div>
                   <dt>focus</dt>
                   <dd>
-                    IEEE 802.11 MAC · Wi-Fi HaLow · Linux drivers · AI systems ·
-                    Edge
+                    IEEE 802.11 MAC · Wi-Fi HaLow · Linux drivers · Zephyr RTOS ·
+                    Cellular IoT · AI systems · Edge
                   </dd>
                 </div>
                 <div>
@@ -394,6 +445,9 @@ export default function Home() {
                 </div>
               </dl>
               <div className="command-links">
+                <a href="https://phenode.com" target="_blank" rel="noreferrer">
+                  PheNode
+                </a>
                 <a
                   href="https://github.com/nurzaman7"
                   target="_blank"
@@ -487,6 +541,28 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="panel" id="embedded">
+          <div className="panel-heading">
+            <h2>Embedded &amp; cellular IoT</h2>
+            <a href="https://phenode.com" target="_blank" rel="noreferrer">
+              phenode.com →
+            </a>
+          </div>
+          <p className="panel-subtitle">
+            # Lead Systems Engineer at Agrela Ecosystems, building PheNode:
+            solar-powered field sensing from the sensor bus to the cloud.
+          </p>
+          <div className="focus-grid">
+            {embeddedAreas.map((area) => (
+              <article key={area.code}>
+                <span>{area.code}</span>
+                <h3>{area.title}</h3>
+                <p>{area.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="panel" id="research">
           <h2>Research focus</h2>
           <p className="panel-subtitle">
@@ -573,9 +649,9 @@ export default function Home() {
             <h2>Open channel</h2>
             <p>
               # Available for research conversations and engineering
-              collaborations around Wi-Fi MAC, embedded wireless and driver
-              systems, agentic and interoperable AI, edge computing, IoT, and
-              digital agriculture.
+              collaborations around Wi-Fi MAC, embedded firmware and RTOS,
+              cellular IoT, wireless drivers, agentic and interoperable AI,
+              edge computing, and digital agriculture.
             </p>
           </div>
           <div className="contact-commands">
