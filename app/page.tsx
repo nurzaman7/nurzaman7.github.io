@@ -460,9 +460,6 @@ export default function Home() {
                 </div>
               </dl>
               <div className="command-links">
-                <a href="https://phenode.com" target="_blank" rel="noreferrer">
-                  PheNode
-                </a>
                 <a
                   href="https://github.com/nurzaman7"
                   target="_blank"
