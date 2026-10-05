@@ -357,7 +357,6 @@ export default function Home() {
               Overview
             </a>
             <a href="#systems">Systems</a>
-            <a href="#embedded">Embedded</a>
             <a href="#research">Research</a>
             <a href="/papers/">Papers</a>
             <a href="#contact">Contact</a>
