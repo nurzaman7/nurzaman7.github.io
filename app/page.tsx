@@ -443,6 +443,21 @@ export default function Home() {
                   <dt>origin</dt>
                   <dd>Assam, India</dd>
                 </div>
+                <div>
+                  <dt>ranking</dt>
+                  <dd>
+                    Listed #7 worldwide in Wireless Networks and Protocols
+                    {" — "}
+                    <a
+                      href="https://scholarlyindex.com/scholars/SI-244bdd56102f8662d4bc75e14c122572?scope=topic&category_id=HCS-TOPIC-OA-T11158&window=5y&share=1"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Scholarly Index, 2021–2025
+                    </a>
+                    .
+                  </dd>
+                </div>
               </dl>
               <div className="command-links">
                 <a href="https://phenode.com" target="_blank" rel="noreferrer">
