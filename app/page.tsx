@@ -16,7 +16,7 @@ const projects = [
   {
     id: "sys-00",
     title: "PheNode · Agrela Ecosystems",
-    category: "embedded / cellular IoT",
+    category: "embedded / IoT",
     status: "commercial",
     description:
       "Solar-powered field sensing platform: Zephyr RTOS firmware on nRF52840, LTE-M/NB-IoT cellular and LoRa sensor links, end-to-end over-the-air updates, and a fleet cloud with device telemetry.",
@@ -369,7 +369,7 @@ export default function Home() {
           <h1>Nurzaman Ahmed</h1>
           <p>
             # Engineering research scientist and embedded systems lead
-            spanning Wi-Fi MAC, Zephyr RTOS firmware, cellular IoT,
+            spanning Wi-Fi MAC, Zephyr RTOS firmware, IoT,
             interoperable AI, edge-cloud, and digital agriculture.
           </p>
         </section>
@@ -435,7 +435,7 @@ export default function Home() {
                   <dt>focus</dt>
                   <dd>
                     IEEE 802.11 MAC · Wi-Fi HaLow · Linux drivers · Zephyr RTOS ·
-                    Cellular IoT · AI systems · Edge
+                    IoT · AI systems · Edge
                   </dd>
                 </div>
                 <div>
@@ -554,7 +554,7 @@ export default function Home() {
 
         <section className="panel" id="embedded">
           <div className="panel-heading">
-            <h2>Embedded &amp; cellular IoT</h2>
+            <h2>Embedded &amp; IoT</h2>
             <a href="https://phenode.com" target="_blank" rel="noreferrer">
               phenode.com →
             </a>
@@ -661,7 +661,7 @@ export default function Home() {
             <p>
               # Available for research conversations and engineering
               collaborations around Wi-Fi MAC, embedded firmware and RTOS,
-              cellular IoT, wireless drivers, agentic and interoperable AI,
+              IoT, wireless drivers, agentic and interoperable AI,
               edge computing, and digital agriculture.
             </p>
           </div>
