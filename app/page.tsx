@@ -32,6 +32,15 @@ const projects = [
     href: "https://github.com/nurzaman7/openwrt-ath9k-2c-mac",
   },
   {
+    id: "sys-07",
+    title: "Dockmaster",
+    category: "Zephyr / firmware QoS",
+    status: "public",
+    description:
+      "Firmware QoS for multi-radio Cortex-M devices on Zephyr, combining traffic-class queues, airtime scheduling, adaptive link selection, and overload handling.",
+    href: "https://github.com/nurzaman7/dockmaster",
+  },
+  {
     id: "sys-02",
     title: "Agent Skills Interoperability Lab",
     category: "agent systems",
