@@ -419,7 +419,7 @@ export default function Home() {
                 real constraints and become something people can use.
               </p>
               <p>
-                At Agrela Ecosystems, I lead systems engineering for{" "}
+                I lead systems engineering for{" "}
                 <a href="https://phenode.com" target="_blank" rel="noreferrer">
                   PheNode
                 </a>
@@ -435,10 +435,6 @@ export default function Home() {
                 <div>
                   <dt>organization</dt>
                   <dd>Donald Danforth Plant Science Center</dd>
-                </div>
-                <div>
-                  <dt>also</dt>
-                  <dd>Lead Systems Engineer · Agrela Ecosystems</dd>
                 </div>
                 <div>
                   <dt>focus</dt>
