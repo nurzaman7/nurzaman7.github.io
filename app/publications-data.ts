@@ -144,7 +144,7 @@ export const journalArticles: PublicationRecord[] = [
   {
     "year": "2019",
     "citation": "M. I. Hussain, N. Ahmed, and S. K. Das, \"Dynamic Bandwidth Allocation Schemes for Multi-hop Wireless Mesh Networks,\" International Journal of Next-Generation Computing, vol. 10, no. 2, 2019.",
-    "href": "https://doi.org/10.47164/ijngc.v10i2.162"
+    "href": "https://ijngc.perpetualinnovation.net/index.php/ijngc/article/view/162"
   },
   {
     "year": "2018",

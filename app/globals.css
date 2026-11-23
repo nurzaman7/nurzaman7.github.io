@@ -1085,6 +1085,136 @@ footer a {
   }
 }
 
+/* Phones: the two data tables are 760px wide, which left titles and
+   descriptions cut off mid-sentence behind a sideways scroll. Below 640px each
+   row becomes a stacked block instead, so everything is readable without
+   swiping. */
+@media (max-width: 640px) {
+  .table-wrap {
+    overflow-x: visible;
+  }
+
+  .systems-table,
+  .papers-table {
+    display: block;
+    min-width: 0;
+  }
+
+  .systems-table thead,
+  .papers-table thead {
+    /* Hidden visually, still available to screen readers. */
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .systems-table tbody,
+  .papers-table tbody {
+    display: block;
+  }
+
+  .systems-table tbody tr,
+  .papers-table tbody tr {
+    border-bottom: 1px dashed var(--border);
+    column-gap: 12px;
+    display: grid;
+    padding: 14px 4px;
+    row-gap: 6px;
+  }
+
+  .systems-table tbody tr {
+    grid-template-areas:
+      "id open"
+      "main main"
+      "domain status";
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .papers-table tbody tr {
+    grid-template-areas:
+      "year open"
+      "main main"
+      "venue venue";
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  /* :nth-child(n) matches the specificity of the fixed column widths above. */
+  .systems-table td:nth-child(n),
+  .papers-table td:nth-child(n) {
+    border-bottom: 0;
+    padding: 0;
+    text-align: left;
+    width: auto;
+  }
+
+  .systems-table td:nth-child(1) {
+    grid-area: id;
+  }
+
+  .systems-table td:nth-child(2) {
+    grid-area: main;
+  }
+
+  .systems-table td:nth-child(3) {
+    color: var(--muted);
+    grid-area: domain;
+  }
+
+  .systems-table td:nth-child(4) {
+    grid-area: status;
+    justify-self: end;
+  }
+
+  .systems-table td:nth-child(5) {
+    grid-area: open;
+    justify-self: end;
+  }
+
+  .papers-table td:nth-child(1) {
+    grid-area: year;
+  }
+
+  .papers-table td:nth-child(2) {
+    grid-area: main;
+  }
+
+  .papers-table td:nth-child(3) {
+    color: var(--muted);
+    grid-area: venue;
+  }
+
+  .papers-table td:nth-child(4) {
+    grid-area: open;
+    justify-self: end;
+  }
+
+  td small {
+    font-size: 12px;
+    max-width: none;
+  }
+
+  tbody tr:hover td {
+    background: transparent;
+  }
+}
+
+/* Narrow phones (360px is the most common Android width): tighten the top
+   navigation so the last link is not pushed off the right edge. */
+@media (max-width: 400px) {
+  .topbar nav {
+    gap: 2px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .topbar nav a {
+    padding: 4px 1px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
