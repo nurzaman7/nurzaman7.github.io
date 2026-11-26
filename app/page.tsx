@@ -414,7 +414,7 @@ export default function Home() {
                 real constraints and become something people can use.
               </p>
               <p>
-                I lead systems engineering for{" "}
+                I lead firmware engineering for{" "}
                 <a href="https://phenode.com" target="_blank" rel="noreferrer">
                   PheNode
                 </a>
