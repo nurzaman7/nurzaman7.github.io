@@ -208,11 +208,6 @@ const publications = [
 
 const positions = [
   {
-    period: "2024–now",
-    role: "Lead Systems Engineer",
-    place: "Agrela Ecosystems · Saint Louis · PheNode",
-  },
-  {
     period: "2022–now",
     role: "Engineering Research Scientist",
     place: "Donald Danforth Plant Science Center · Saint Louis",
